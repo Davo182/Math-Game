@@ -1,0 +1,10 @@
+
+.container {
+    max-width: 1000px;
+    min-width: 700px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
