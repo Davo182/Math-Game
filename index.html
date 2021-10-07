@@ -17,7 +17,7 @@
             class="container w-75 mt-5 py-5 d-flex flex-column align-items-center justify-content-center shadow bg-light rounded">
             <h2 class="text-center">🤓Welcome To Math Game🤓</h2>
             <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
-                <div class="d-flex w-50 justify-content-between text-center">
+                <div class="d-flex w-50 justify-content-between text-center mt-3">
                     <div class="border border-primary rounded p-2">
                         <p>Current Score</p>
                         <p id="score">0</p>
@@ -28,31 +28,33 @@
                     </div>
 
                 </div>
-                <h4 id="timer">10</h4>
-                <h3 id="question">Question</h3>
+                <h1 id="timer" class="border border-warning rounded p-4">10</h1>
+                <p>Time</p>
+                <h1 id="question">Question</h1>
                 <input id="answer-input" class="text-center" type="text" placeholder="answer">
-                <div class="d-flex w-25 justify-content-between mt-3 text-center">
+                <div class="d-flex w-25 justify-content-between mt-4 mb-0 text-center border border-info pt-3 pb-0 px-3 rounded">
                     <div>
-                        <input type="checkbox" checked>
+                        <input id="sum-check" type="checkbox" checked>
                         <p>+</p>
                     </div>
                     <div>
-                        <input type="checkbox">
+                        <input id="sub-check" type="checkbox">
                         <p>-</p>
                     </div>
                     <div>
-                        <input type="checkbox">
+                        <input id="mult-check" type="checkbox">
                         <p>x</p>
                     </div>
                     <div>
-                        <input type="checkbox">
+                        <input id="div-check" type="checkbox">
                         <p>/</p>
                     </div>
                 </div>
-                <div class="d-flex flex-column text-center">
+                <p class="mt-0">Question Type</p>
+                <div class="d-flex flex-column text-center rounded border border-info p-3">
+                    <p id="range-text" class="m-0">10</p>
+                    <input id="question-range" class="m-0" type="range" min="10" max="50" step="5" value="10">
                     <label for="question-range">Number Limit</label>
-                    <p id="range-text">10</p>
-                    <input id="question-range" type="range" min="10" max="50" step="5" value="10">
                 </div>
             </div>
 
