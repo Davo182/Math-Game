@@ -81,7 +81,11 @@ let renderQuestion = function () {
         question.values[0] = (Math.floor(Math.random() * range) + 1);
         question.values[1] = question.values[0] * (Math.floor(Math.random() * range) + 1);
         $('#question').text(`${question.values[1]} ${question.type} ${question.values[0]}`);
-    } else {
+    } else if (question.type === '-') {
+        question.values.sort((a,b) => b - a);
+        $('#question').text(`${question.values[0]} ${question.type} ${question.values[1]}`);
+    } 
+    else {
         $('#question').text(`${question.values[0]} ${question.type} ${question.values[1]}`);
     }
     $('#answer-input').val('');
